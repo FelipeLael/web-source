@@ -26,7 +26,7 @@ class TranscriptionService:
         """Abre diálogo para selecionar arquivo de áudio"""
         return filedialog.askopenfilename(
             filetypes=[
-                ("Arquivos de áudio", "*.mp3 *.wav *.m4a *.flac *.ogg *.mp4 *.mpeg *.mpga *.webm")
+                ("Arquivos de áudio", "*.mp3 *.wav *.m4a *.flac *.ogg")
             ]
         )
     
