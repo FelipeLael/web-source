@@ -59,7 +59,7 @@ class TranscriptionService:
             root.after(0, lambda: callback(transcription))
             
         except Exception as e:
-            root.after(0, lambda: callback(f"Erro na transcrição: {str(e)}"))
+            root.after(0, lambda e=e: callback(f"Erro na transcrição: {str(e)}"))
     
     def start_transcription(self, file_path, model_id, callback, root, progress_bar):
         """Inicia processo de transcrição em threads paralelas"""
@@ -85,4 +85,4 @@ class TranscriptionService:
         
         # Iniciar as threads
         progress_thread.start()
-        transcription_thread.start() 
+        transcription_thread.start()
