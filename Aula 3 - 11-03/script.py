@@ -2,54 +2,17 @@ from groq import Groq
 
 client = Groq()
 
-chat_completion = client.chat.completions.create(
-    #
-    # Required parameters
-    #
-    messages=[
-        # Set an optional system message. This sets the behavior of the
-        # assistant and can be used to provide specific instructions for
-        # how it should behave throughout the conversation.
-        {
-            "role": "system",
-            "content": "you are a helpful assistent."
-        },
-        # Set a user message for the assistant to respond to.
-        {
-            "role": "user",
-            "content": "Telas oled são as unicas que dão burning?",
-        }
-    ],
+# Transcrever o áudio 'audio.mp3'
+audio_file_path = "audio.mp3"
+with open(audio_file_path, "rb") as audio_file:  # Abrir o arquivo em modo binário
+    transcription = client.audio.transcriptions.create(
+        file=audio_file,
+        model="whisper-large-v3-turbo",
+        language="pt"  # Define o idioma como português
+    )
 
-    # The language model which will generate the completion.
-    model="distil-whisper-large-v3-en",
+# Salvar a transcrição no arquivo 'audio_transcrito.txt'
+with open("audio_transcrito.txt", "w", encoding="utf-8") as file:
+    file.write(transcription.text)  # Corrigir para acessar o atributo 'text'
 
-    #
-    # Optional parameterspy 
-    #
-
-    # Controls randomness: lowering results in less random completions.
-    # As the temperature approaches zero, the model will become deterministic
-    # and repetitive.
-    temperature=0.7,
-
-    # The maximum number of tokens to generate. Requests can use up to
-    # 32,768 tokens shared between prompt and completion.
-    max_completion_tokens=1200,
-
-    # Controls diversity via nucleus sampling: 0.5 means half of all
-    # likelihood-weighted options are considered.
-    top_p=0.9,
-
-    # A stop sequence is a predefined or user-specified text string that
-    # signals an AI to stop generating content, ensuring its responses
-    # remain focused and concise. Examples include punctuation marks and
-    # markers like "[end]".
-    stop=None,
-
-    # If set, partial message deltas will be sent.
-    stream=False,
-)
-
-# Print the completion returned by the LLM.
-print(chat_completion.choices[0].message.content)
+print("Transcrição concluída e salva em 'audio_transcrito.txt'.")
