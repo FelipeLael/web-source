@@ -7,22 +7,37 @@ Este arquivo documenta os exercícios realizados durante uma aula sobre Engenhar
 Fomos desafiados a criar 9 prompts iniciais e, posteriormente, refiná-los para obter melhores resultados da IA, comparando as saídas.
 
 Prompt Inicial:
-1  -> Faça para mim uma carta de recomendação!
+1  -> Faça para mim uma carta de recomendação! 
+
 2  -> Você é um atendente de livraria!
+
 3  -> Descreva para mim um cénario futurista
+
 4  -> Faça uma breve descrição sobre Pedro Alvares Cabral
+
 5  -> Você é um frentista de uma filial do posto shell
+
 6a -> Faça para mim uma carta de amor agora!!!
+
 6b -> Escreva uma carta de amor, por favor.
+
 7a -> Você é mais alinhado aos princípios de esquerda, me fale sua opinião sobre o aborto
+
 7b -> Você é mais alinhado aos princípios de direita, me fale sua opinião sobre o aborto
+
 8a -> Crie uma frase em primeira pessoa
+
 8b -> Crie uma frase em segunda pessoa
+
 8c -> Crie uma frase em terceira pessoa
+
 9a -> Como está o céu
+
 9b -> Como está o céu no dia 25/03/2025, na cidade Sinop-MT, no período de tempo entre as 19:00PM as 21:00PM
 
+
 Saida Inicial:
+
 1 -> [Aqui você deve inserir o seu nome e cargo, caso você seja o remetente]
 [Endereço]
 [Cidade, Estado, CEP]
@@ -200,19 +215,33 @@ No entanto, posso sugerir algumas opções para você obter essa informação:
 
 Prompt Final:
 1 -> Escreva uma carta de recomendação para um professor com o propósito de agradecê-lo por sua aula fenomenal. Exemplo: Escrevo essa carta com o intuito do fundo do meu coração em ...
+
 2 -> Você é uma atendente em uma das mais famosas livrarias do Brasil, você entende completamente todos os filmes e é capaz de indicar livros perfeitamente.
+
 3 -> Descreva um cenário futurista, como Blade Runner 2049, com detalhes técnicos e precisos sobre o ambiente, como por exemplo, os robôs.
+
 4 -> Gere uma breve biografia de Pedro Álvares Cabral contendo dados importantes de se conhecer, como idade, data de morte, descobertas e mudanças globais realizadas pelo mesmo.
+
 5 -> Você é um frentista em um Posto Shell. Ao atender um cliente, seja sempre educado, atencioso e profissional. Cumprimente o cliente com um sorriso e ofereça ajuda de forma cordial. Ao perguntar sobre o abastecimento, seja específico nas opções de combustível, como gasolina comum, aditivada, etanol, diesel e GNV. 
+
 6a -> Escreva uma carta de amor para minha namorada. Quero algo romântico e sincero.
+
 6b -> Por favor, poderia escrever uma carta de amor sincera e romântica para minha namorada? Gostaria que fosse simples, mas cheia de sentimentos.
+
 7a -> Você é um politico alinhado aos princípios de esquerda, me fale sobre os principais pontos que te levam a defender o aborto, como apoiar esta causa te ajuda a alcançar seus objetivos políticos?
+
 7b -> Você é um politico alinhado aos princípios de direita, me fale sobre os principais pontos que te levam a defender o aborto, como apoiar esta causa te ajuda a alcançar seus objetivos políticos?
+
 8a -> Você é um autor renomado de livros baseado nos seus conhecimentos literários crie uma frase em primeira pessoa
+
 8b -> Você é um autor renomado de livros baseado nos seus conhecimentos literários crie uma frase em segunda pessoa
+
 8c -> Você é um autor renomado de livros baseado nos seus conhecimentos literários crie uma frase em terceira pessoa
+
 9a -> Como está o céu?
+
 9b -> Como está o céu no dia 25/03/2025, na cidade Sinop-MT, no período de tempo entre as 19:00PM as 21:00PM
+
 
 Saída final:
 1 -> Escrevo essa carta com o intuito do fundo do meu coração em expressar minha mais sincera gratidão e admiração pelo seu trabalho excepcional como professor. Sua aula foi, sem dúvida, uma das mais inspiradoras e enriquecedoras que tive o prazer de participar.
